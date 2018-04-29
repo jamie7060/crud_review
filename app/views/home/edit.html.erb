@@ -1,0 +1,16 @@
+<h1>수정을 위한 페이지입니다.</h1>
+<p>수정 완료후 수정 버튼을 눌러주세요.</p>
+
+<form action="/home/update/<%=@post.id%>" method="post">
+    무엇을: <input type="text" name="what" value="<%=@post.what%>"><br>
+    얼마에: <input type="number" name="how_much" value="<%=@post.how_much%>"><br>
+    몇개나: <input type="number" name="how_many" value="<%=@post.how_many%>"><br>
+    <div>
+    <input type="checkbox" id="buy" name="buysell" value="buy">
+    <label for="buy">Buy</label>
+    <input type="checkbox" id="sell" name="buysell" value="sell">
+    <label for="sell">Sell</label>
+    </div>
+    <input type="submit" value="수정">
+</form>
+

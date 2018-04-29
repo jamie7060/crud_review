@@ -1,0 +1,14 @@
+<h1>무엇을 사고 팔았는지 새로 입력해 주세요</h1>
+<p>기록을 누르면 장부에 내역이 남습니다.</p>
+
+<form action="/home/create" method="post">
+    무엇을: <input type="text" name="what"><br>
+    얼마에: <input type="number" name="how_much"><br>
+    몇개나: <input type="number" name="how_many"><br>
+    <div>
+    <input type="checkbox" id="buy" name="buysell" value="buy">
+    <label for="buy">Buy</label>
+    <input type="checkbox" id="sell" name="buysell" value="sell">
+    <label for="sell">Sell</label>
+    </div>
+    <input type="submit" value="기록">
